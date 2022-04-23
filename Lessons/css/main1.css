@@ -1,0 +1,86 @@
+/* comments */
+/* version: 1.0 */
+/* author: Peter-Hafner */
+/* website: n/a */
+
+/*
+Table of Contents
+1. Wrapper
+2. Header
+3. Nav
+4. Banner
+5. Main
+6. Footer */
+
+body{
+    background-color: #e6e6d7;
+    color: #191970;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 16px;/* px, %, em, rem */
+
+    /* font shorthand */
+    /* font: font-style font-variant font-weight font-size line-height font-family */
+
+    font: italic normal normal 16px/1.5 Arial;
+}
+
+h2{
+    /* google fonts */
+
+    /* text-shadow: horizontal vertical blur-radius color */
+    text-shadow: 0 1 5 rgba(0, 0, 0, 0.5);
+}
+main{
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+/* selector - elements, id, classes, contextual, multiple selectors*/
+/* id */
+#sideright{
+
+}
+/* class */
+.sideleft{
+
+}
+/* contextual */
+header h1{
+
+}
+nav, footer, header, section{
+    display: block;
+}
+
+/* the important rule */
+h3{
+    color: blue !important;
+}
+.btn .btn-primary{
+    background-color: red !important;
+}
+
+/* css variable */
+:root{
+    --main-color: #05a081;
+    --margin: 40px;
+    --font-size:1.5rem;
+    --bg-color: #333;
+}
+
+h2{
+    background-color: var(--main-color);
+    margin: var(--margin)
+}
+p{
+    font-size: var(--font-size);
+}
+.banner{
+    background-image: url(../images/background.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
